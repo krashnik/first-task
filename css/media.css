@@ -1,0 +1,28 @@
+/* Для больших экранов */
+@media (min-width: 1200px) {
+	body
+	header
+	.wrapper
+	.logo
+	.menu
+	.menu-links
+	.menu-links__activeLink 
+	.menu-style
+	.h1
+	.h2
+	.content
+	.content__box
+	.content__box-style
+	.image
+	.content__box-spaces
+	footer
+	.footer
+	.footer__box
+	.footer__box-coloredLine
+}
+/* Для некоторых нетбуков и планшетов (таблеток) */
+@media (min-width: 768px) and (max-width: 979px) { ... }
+/* Для планшетов и некоторых телефонов */
+@media (max-width: 767px) { ... }
+/* Для телефонов и некоторых устройств у которых совсем маленький экран */
+@media (max-width: 480px) { ... }
