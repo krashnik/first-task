@@ -8,12 +8,11 @@ body {
 }
 .wrapper {
 	box-sizing: border-box;
-
 	width: 100%;
 	padding: 0 15px;
 }
 header {
-  padding: 10px 0 0;
+  	padding: 10px 0 0;
 	width: 100%;
 }
 .header__toggle{
@@ -21,6 +20,13 @@ header {
 	position: absolute;
 	left: 20px;
 	top: 10px;
+}
+.menu__toggle{
+	display: block;
+	position: absolute;
+}
+.menu__toggle.closed{
+	display: none;
 }
 header:after {
 	content: " ";
