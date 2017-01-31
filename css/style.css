@@ -89,6 +89,14 @@ header:after {
 	width: 128px;
 	height: 58px;
 }
+@media (min-width: 900px) {
+	.logo{
+		display: block;
+	}
+	.logo.closed {
+		display: block;
+	}
+}
 .menu {
 	float: left;
 	padding-top: 27px;
