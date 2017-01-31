@@ -18,10 +18,19 @@ header {
 .header__toggle {
 	display: none;
 	position: absolute;
-	left: 20px;
+	align-content: center;
 	top: 10px;
+	left: 20px;
+	padding: 5px 10px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	background-color: #81b5cb;
+	border: none;
+	border-radius: 8px;
 }
-button {
+/*button {
 	display: inline-block;
 	align-content: center;
 	margin-top: 10px;
@@ -33,8 +42,9 @@ button {
 	background-color: #81b5cb;
 	border: none;
 	border-radius: 8px;
-}
+}*/
 .menu__toggle {
+	display: none;
 	margin: 0 auto;
 	width: 300px;
 	height: 165px;
@@ -69,6 +79,9 @@ header:after {
 	}
 	.header__menu{
 		display: none;
+	}
+	.menu__toggle{
+		display: block;
 	}
 }
 .logo {
