@@ -21,11 +21,32 @@ header {
 	left: 20px;
 	top: 10px;
 }
+button {
+	background-color: #81b5cb;
+	border: none;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 8px;
+}
 .menu__toggle{
 	display: block;
-	position: absolute;
+	/*position: absolute;*/
+	margin: 0 auto;
+	width: 300px;
+	height: 300px;
+	border-radius: 5px;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, .4);
+	background: #e9f2f7;
+
 }
 .menu__toggle.closed{
+	display: none;
+	
+}
+.header__logo.closed {
 	display: none;
 }
 header:after {
