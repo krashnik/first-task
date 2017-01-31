@@ -1,50 +1,55 @@
 @import url(reset.css);
 body {
-  background: #e9f2f7;
-	font-family: 'PT Sans';
+	margin: 0 auto;
 	width: 1000px;
 	max-width: 100%;
-	margin: 0 auto;
+	font-family: 'PT Sans';
+	background: #e9f2f7;
 }
 .wrapper {
 	box-sizing: border-box;
-	width: 100%;
 	padding: 0 15px;
+	width: 100%;
 }
 header {
-  	padding: 10px 0 0;
+  padding: 10px 0 0;
 	width: 100%;
 }
-.header__toggle{
+.header__toggle {
 	display: none;
 	position: absolute;
 	left: 20px;
 	top: 10px;
 }
 button {
+	display: inline-block;
+	align-content: center;
+	margin-top: 10px;
+	padding: 5px 10px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
 	background-color: #81b5cb;
 	border: none;
-	color: white;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
 	border-radius: 8px;
 }
-.menu__toggle{
-	display: block;
-	/*position: absolute;*/
+.menu__toggle {
 	margin: 0 auto;
 	width: 300px;
-	height: 300px;
+	height: 165px;
+	background: #e9f2f7;
 	border-radius: 5px;
 	box-shadow: 0 2px 2px rgba(0, 0, 0, .4);
-	background: #e9f2f7;
-
+	/*transition: all .2s;*/
 }
-.menu__toggle.closed{
+.menu__toggle-style ul li {
+	box-sizing: border-box;
+	padding-top: 20px;
+	text-align: center;
+}
+.menu__toggle.closed {
 	display: none;
-	
 }
 .header__logo.closed {
 	display: none;
@@ -66,7 +71,6 @@ header:after {
 		display: none;
 	}
 }
-
 .logo {
   float: left;
 	width: 128px;
@@ -127,7 +131,6 @@ header:after {
   line-height: 16pt;
   color: #000000;
 }
-
 .content__box {
 	box-sizing: border-box;
 	padding-top: 40px;
@@ -137,7 +140,6 @@ header:after {
 	font-size: 16px;
 	letter-spacing: normal;
 }
-
 @media (max-width: 900px) {
 	.content__box{
 		width: 100%;
@@ -159,7 +161,6 @@ header:after {
 	max-height: 290px;
 	max-width: calc(100% - 45px);
 }
-
 span.content__box-colored {
 	font-weight: bold;
 	color:#bf4140;
@@ -181,7 +182,6 @@ span.content__box-colored {
 	padding-right: 30px;
 
 }
-
 .footer__halfbox {
 	width: 50%;
 	display: flex;
@@ -207,7 +207,6 @@ span.content__box-colored {
 .footer__box-coloredLine{
 	border-top: 2px solid #d4999b;
 }
-
 @media (max-width: 900px) {
 	.footer{
 		padding-right: 0;

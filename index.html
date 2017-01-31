@@ -4,11 +4,7 @@
 		<meta charset="utf-8">
 		<title>Task 1</title>
 		<link href="css/style.css" rel="stylesheet" type="text/css"/>
-
-	<script
-  src="http://code.jquery.com/jquery-3.1.1.min.js"
-  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
+		<script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Caption|PT+Sans+Narrow" rel="stylesheet"/>
 		<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -24,20 +20,17 @@
             $(".menu__toggle").addClass("closed");
   				$(".header__logo").removeClass("closed");
         	}
-  				// $(".menu__toggle").removeClass("closed");
-  				// $(".header__logo").addClass("closed");
-  				// $(this).addClass("closed");
 				});
 			 });
-</script>
+		</script>
 	</head>
 	<body>
 		<div class="wrapper">
 			<header class="header">
-				<button class='header__toggle' onclick="change">MENU</button>
-				<div class="menu__toggle closed">
+				<button class='header__toggle' onclick="change">menu</button>
+				<div class="menu__toggle closed menu__toggle-style menu-links">
 				<ul>
-					<li><a href="#">О болезни</a></li>
+					<li class="menu-links__activeLink"><a href="#">О болезни</a></li>
 					<li><a href="#">Пациентам</a></li>
 					<li><a href="#">Для СМИ</a></li>
 					<li><a href="#">Вопрос-ответ</a></li>
