@@ -1,4 +1,7 @@
 @import url(reset.css);
+html {
+	 overflow-x: hidden;
+}
 body {
 	margin: 0 auto;
 	width: 1000px;
@@ -17,6 +20,7 @@ header {
 }
 .header__toggle {
 	display: none;
+	flex-wrap: wrap;
 	position: absolute;
 	align-content: center;
 	top: 10px;
@@ -51,7 +55,7 @@ header {
 	background: #e9f2f7;
 	border-radius: 5px;
 	box-shadow: 0 2px 2px rgba(0, 0, 0, .4);
-	/*transition: all .2s;*/
+	/*transition: top 1s ease-out 0.5s;*/
 }
 .menu__toggle-style ul li {
 	box-sizing: border-box;
@@ -61,7 +65,7 @@ header {
 .menu__toggle.closed {
 	display: none;
 }
-.header__logo.closed {
+.logo.closed {
 	display: none;
 }
 header:after {
@@ -74,13 +78,13 @@ header:after {
 		display: flex;
 		justify-content: center;
 	}
-	.header__toggle{
+	.header__toggle {
 		display: block;
 	}
-	.header__menu{
+	.header__menu {
 		display: none;
 	}
-	.menu__toggle{
+	.menu__toggle {
 		display: block;
 	}
 }
@@ -90,9 +94,6 @@ header:after {
 	height: 58px;
 }
 @media (min-width: 900px) {
-	.logo{
-		display: block;
-	}
 	.logo.closed {
 		display: block;
 	}
@@ -201,7 +202,6 @@ span.content__box-colored {
 	justify-content: space-between;
 	margin-top: 115px;
 	padding-right: 30px;
-
 }
 .footer__halfbox {
 	width: 50%;
